@@ -1,1 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
 
+    <string name="app_name">PPO-5-1</string>
+    <string name="hello_world">Hello world!</string>
+	<string-array name="testName">
+		<item>11</item>
+		<item>22</item>
+		<item>33</item>
+		<item>44</item>
+	</string-array>
+	
+</resources>
