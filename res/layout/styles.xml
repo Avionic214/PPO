@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+	</style>
+	<style name="tabTextStyle"
+        parent="android:Widget.TextView">
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">25sp</item>
+		<item name="android:background">@drawable/shape</item>
+    </style>
+    
+</resources>

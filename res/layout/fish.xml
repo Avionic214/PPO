@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#3C7984">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Код отказа:"
+		android:textSize="25sp"
+		android:textColor="#7A190D"/>
+
+	<TextView
+		android:id="@+id/Ko"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:textSize="20sp"/>
+	
+	<TextView
+		android:id="@+id/kontur"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="25sp"
+		android:textColor="#7A190D"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Неисправность:"
+		android:textSize="25sp"
+		android:textColor="#7A190D"/>
+
+	<TextView
+		android:id="@+id/Ln"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:textSize="20sp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Возможная причина:"
+		android:textSize="25sp"
+		android:textColor="#7A190D"/>
+
+	<TextView
+		android:id="@+id/Lp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:textSize="20sp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Номер канала/ блока/ датчика- "
+		android:textSize="25sp"
+		android:textColor="#7A190D"/>
+
+	<TextView
+		android:id="@+id/K"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:textSize="20sp"/>
+
+</LinearLayout>
+

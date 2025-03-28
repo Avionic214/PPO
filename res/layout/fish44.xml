@@ -1,0 +1,59 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+android:background="#3C7984">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Код отказа:"
+		android:textSize="25sp"
+		android:textColor="#7A190D"/>
+
+	<TextView
+		android:id="@+id/ko44"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:textSize="20sp"/>
+	
+	<TextView
+		android:id="@+id/kontur"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Проверка исправности линий связи с 
+		системами СДУ и ПАБ"
+		android:textSize="25sp"
+		android:textColor="#7A190D"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Отказавшая сисиема:"
+		android:textSize="25sp"
+		android:textColor="#7A190D"/>
+
+	<TextView
+		android:id="@+id/s44"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:textSize="20sp"/>
+
+	<TextView
+		android:id="@+id/i44"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:textSize="20sp"/>
+
+	<TextView
+		android:id="@+id/ql44"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#000000"
+		android:textSize="20sp"/>
+
+</LinearLayout>
