@@ -1,0 +1,159 @@
+import android.app.*;
+import android.os.*;
+import android.widget.TextView;
+import android.widget.Button;
+import android.view.View;
+import android.view.View.OnClickListener;
+
+public class MainActivity extends Activity implements OnClickListener
+{
+	TextView sTv, iTv, kTv,qTv, l1Tv, l2Tv;
+	
+	Button but1, but2, but3, but4, but5, but6, but7,
+	but8, but9, but0, butsb, butvv, butadd;
+	String code, tap;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+		
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+		sTv= findViewById(R.id.textS);
+		iTv= findViewById(R.id.textI);
+		kTv= findViewById(R.id.textK);
+		qTv= findViewById(R.id.textQ);
+		l1Tv= findViewById(R.id.textL1);
+		l2Tv= findViewById(R.id.textL2);
+		
+		but1= findViewById(R.id.button1);
+		but2= findViewById(R.id.button2);
+		but3= findViewById(R.id.button3);
+		but4= findViewById(R.id.button4);
+		but5= findViewById(R.id.button5);
+		but6= findViewById(R.id.button6);
+		but7= findViewById(R.id.button7);
+		but8= findViewById(R.id.button8);
+		but9= findViewById(R.id.button9);
+		but0= findViewById(R.id.button0);
+		butsb= findViewById(R.id.buttonsb);
+		butvv= findViewById(R.id.buttonsb);
+		butadd= findViewById(R.id.addcode);
+		
+		but1.setOnClickListener(this);
+		but2.setOnClickListener(this);
+		but3.setOnClickListener(this);
+		but4.setOnClickListener(this);
+		but5.setOnClickListener(this);
+		but6.setOnClickListener(this);
+		but7.setOnClickListener(this);
+		but8.setOnClickListener(this);
+		but9.setOnClickListener(this);
+		but0.setOnClickListener(this);
+		butsb.setOnClickListener(this);
+		butvv.setOnClickListener(this);
+		butadd.setOnClickListener(this);
+		
+    }
+	
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+			case R.id.button1:
+				tap= "1";
+				codeSet();
+				setWin();
+				break;
+			case R.id.button2:
+				tap= "2";
+				codeSet();
+				setWin();
+				break;
+			case R.id.button3:
+				tap= "3";
+				codeSet();
+				setWin();
+				break;
+			case R.id.button4:
+				tap= "4";
+				codeSet();
+				setWin();
+				break;
+			case R.id.button5:
+				tap= "5";
+				codeSet();
+				setWin();
+				break;
+			case R.id.button6:
+				tap= "6";
+				codeSet();
+				setWin();
+				break;
+			case R.id.button7:
+				tap= "7";
+				codeSet();
+				setWin();
+				break;
+			case R.id.button8:
+				tap= "8";
+				codeSet();
+				setWin();
+				break;
+			case R.id.button9:
+				tap= "9";
+				codeSet();
+				setWin();
+				break;
+			case R.id.button0:
+				tap= "0";
+				codeSet();
+				setWin();
+				break;
+			case R.id.buttonsb:
+				tap= null;
+				code="";
+				setWin();
+				break;
+				
+		}
+				
+	}
+	
+	public void setWin(){
+		switch (code.length()){
+			case 0:
+				sTv.setText("");
+				iTv.setText("");
+				kTv.setText("");
+				qTv.setText("");
+				l1Tv.setText("");
+				l2Tv.setText("");
+				break;
+			case 1:
+				sTv.setText(tap);
+				break;
+			case 2:
+				iTv.setText(tap);
+				break;
+			case 3:
+				kTv.setText(tap);
+				break;
+			case 4:
+				qTv.setText(tap);
+				break;
+			case 5:
+				l1Tv.setText(tap);
+				break;
+			case 6:
+				l2Tv.setText(tap);
+				break;
+		}
+	}
+	public void codeSet(){
+		if (code ==null || code== ""){
+			code= tap;
+		} else {
+			code= code + tap;
+		}
+	}
+}
